@@ -660,6 +660,179 @@ a {
   color: var(--steel);
 }
 
+/* ─── Product Card Badge ─── */
+.product-card-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--orange);
+  background: var(--orange-muted);
+  border-radius: 16px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ─── Who It's For ─── */
+.who-its-for {
+  padding: 100px 0;
+  background: var(--surface);
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.audience-card {
+  background: var(--background);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid var(--border-light);
+}
+
+.audience-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.audience-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.audience-list {
+  list-style: none;
+}
+
+.audience-list li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.audience-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+}
+
+/* ─── Why Forge ─── */
+.why-forge {
+  padding: 100px 0;
+  background: var(--background);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.why-card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+.why-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.why-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ─── Contact ─── */
+.contact {
+  padding: 80px 0;
+  background: var(--surface);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 40px;
+  background: var(--background);
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  flex: 1;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.contact-card:hover {
+  border-color: var(--orange);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.contact-icon {
+  font-size: 28px;
+}
+
+.contact-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.contact-detail {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ─── Scroll Animations ─── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
   .nav-toggle {
@@ -748,6 +921,19 @@ a {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
@@ -765,5 +951,9 @@ a {
 
   .product-card {
     padding: 28px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
   }
 }

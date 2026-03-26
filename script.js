@@ -27,7 +27,7 @@ document.querySelectorAll('.nav-link:not(.dropdown-trigger), .dropdown-item').fo
   });
 });
 
-// Navbar background on scroll
+// Navbar shadow on scroll
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');
   if (window.scrollY > 10) {
@@ -36,3 +36,25 @@ window.addEventListener('scroll', () => {
     navbar.style.boxShadow = 'none';
   }
 });
+
+// Scroll fade-in animations
+const fadeElements = document.querySelectorAll('.fade-in');
+
+if (fadeElements.length > 0) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Stagger the animation slightly for each element
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 100);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  fadeElements.forEach(el => observer.observe(el));
+}
