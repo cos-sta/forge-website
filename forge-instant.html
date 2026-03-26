@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forge INSTANT - Real-Time Worker Dispatch</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="product-pages.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/icon.png" alt="Forge" class="nav-logo-img">
+        <span class="nav-logo-text">Forge</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link dropdown-trigger active">
+            Products
+            <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="forge-instant.html" class="dropdown-item">
+                <span class="dropdown-icon">&#9889;</span>
+                <div>
+                  <span class="dropdown-item-title">Forge INSTANT</span>
+                  <span class="dropdown-item-desc">Real-time worker dispatch</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="forge-iso.html" class="dropdown-item">
+                <span class="dropdown-icon">&#128188;</span>
+                <div>
+                  <span class="dropdown-item-title">Forge ISO</span>
+                  <span class="dropdown-item-desc">Standard job marketplace</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Product Hero -->
+  <section class="product-hero product-hero-instant">
+    <div class="container product-hero-content">
+      <span class="product-badge product-badge-urgent">&#9889; INSTANT</span>
+      <h1 class="product-hero-title">Workers When You<br>Need Them <span class="highlight">Now</span></h1>
+      <p class="product-hero-subtitle">Forge INSTANT is real-time dispatch for the shift work industry. Post an urgent job, and we'll match you with available, nearby workers in minutes.</p>
+      <a href="#features" class="btn btn-primary">See How It Works</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="product-features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Built for Urgency</h2>
+        <p class="section-subtitle">Every feature in Forge INSTANT is designed to get workers on-site as fast as possible.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap urgent-bg">
+            <span class="feature-icon">&#128205;</span>
+          </div>
+          <h3 class="feature-title">Live Radar Search</h3>
+          <p class="feature-desc">When you post an ASAP job, Forge scans for available workers near your location in real time with a live radar animation so you can see the search happening.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap urgent-bg">
+            <span class="feature-icon">&#9201;</span>
+          </div>
+          <h3 class="feature-title">Flexible Deadlines</h3>
+          <p class="feature-desc">Choose from ASAP (4 hours), Today (10 hours), Tomorrow (24 hours), or 2 Days (48 hours). The urgency level determines how the matching algorithm prioritises your job.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap urgent-bg">
+            <span class="feature-icon">&#128100;</span>
+          </div>
+          <h3 class="feature-title">Sequential Offers</h3>
+          <p class="feature-desc">Workers receive offers one at a time with a 30-second response window. This ensures fair allocation and avoids overbooking. You see progress as each candidate is contacted.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap urgent-bg">
+            <span class="feature-icon">&#128172;</span>
+          </div>
+          <h3 class="feature-title">Instant Messaging</h3>
+          <p class="feature-desc">Once a worker accepts, you're connected via in-app messaging to coordinate arrival, share site details, and manage the job without leaving the app.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap urgent-bg">
+            <span class="feature-icon">&#127968;</span>
+          </div>
+          <h3 class="feature-title">Trade Selection</h3>
+          <p class="feature-desc">Select the exact trade you need from a curated list of construction and shift work roles. Your request goes directly to workers with matching skills.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap urgent-bg">
+            <span class="feature-icon">&#128176;</span>
+          </div>
+          <h3 class="feature-title">Set Your Rate</h3>
+          <p class="feature-desc">Choose your pay rate per hour or per day with a simple slider. Workers see the rate upfront so there are no surprises when they accept.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How INSTANT Works -->
+  <section class="product-how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Process</span>
+        <h2 class="section-title">How Forge INSTANT Works</h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-step-number">1</div>
+          <div class="process-step-content">
+            <h3>Select Your Trade</h3>
+            <p>Open Forge INSTANT and choose the type of worker you need from the trade list. One tap and you're moving.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-step-number">2</div>
+          <div class="process-step-content">
+            <h3>Set Pay & Deadline</h3>
+            <p>Slide to set your pay rate and choose your urgency level. ASAP triggers the real-time dispatch system.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-step-number">3</div>
+          <div class="process-step-content">
+            <h3>Swipe to Request</h3>
+            <p>Confirm with a swipe gesture. Your location is auto-detected, and nearby workers start receiving offers immediately.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-step-number">4</div>
+          <div class="process-step-content">
+            <h3>Worker Accepts</h3>
+            <p>Watch in real-time as candidates are contacted. Once someone accepts, you're connected and ready to coordinate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Need Someone Now?</h2>
+        <p class="cta-subtitle">Download Forge and use INSTANT to fill urgent shifts in minutes.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-white">Download on iOS</a>
+          <a href="#" class="btn btn-white-outline">Get on Android</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/icon.png" alt="Forge" class="footer-logo-img">
+            <span class="footer-logo-text">Forge</span>
+          </div>
+          <p class="footer-tagline">Building a better Australia together.</p>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Products</h4>
+          <a href="forge-instant.html">Forge INSTANT</a>
+          <a href="forge-iso.html">Forge ISO</a>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Company</h4>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Forge. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
